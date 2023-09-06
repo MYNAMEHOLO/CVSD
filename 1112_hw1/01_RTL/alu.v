@@ -160,7 +160,7 @@ always@(*)begin
             o_data_t = i_data_a | (~i_data_b);
         end
         4'd6:begin //CLZ
-            casex(i_data_a)
+            casez(i_data_a)
             10'b1???_????_??: o_data_t = 10'd0;
             10'b01??_????_??: o_data_t = 10'd1;
             10'b001?_????_??: o_data_t = 10'd2;
@@ -175,7 +175,7 @@ always@(*)begin
             endcase
         end
         4'd7:begin //ROL
-            casex(i_data_a)
+            casez(i_data_a)
             10'd0: o_data_t = 10'd0;
             10'b????_????_?1: o_data_t = 10'd0;
             10'b????_????_10: o_data_t = 10'd1;
