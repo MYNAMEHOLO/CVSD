@@ -1,0 +1,1 @@
+ncverilog -f rtl.f +define+$1 +access+rw 

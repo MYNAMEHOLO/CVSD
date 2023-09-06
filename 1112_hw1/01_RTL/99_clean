@@ -1,0 +1,3 @@
+rm -rf *.history *.key *.log
+rm -rf novas.rc novas.fsdb novas.conf
+rm -rf INCA_libs nWaveLog BSSLib.lib++
